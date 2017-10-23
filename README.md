@@ -51,6 +51,8 @@ via:
 1. Indicate that you do want to set up SSH for your instances (default).
 
     * Choose the keypair that matches your team's name.
+    
+1. To test this configuration, skip ahead to section "Creating Elastic Beanstalk Deployments", wherein you will deploy this demo project to Elastic Beanstalk.
 
 ## Preparing Your Application for Elastic Beanstalk
 
