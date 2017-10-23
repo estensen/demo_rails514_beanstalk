@@ -4,6 +4,16 @@ This demo rails application provides a minimal rails 5 application
 that can be launched to elastic beanstalk and configured with a
 postgres database.
 
+## Table of Contents
+
+- [Preparing this Rails Application for Elastic Beanstalk](#preparing-this-rails-application-for-elastic-beanstalk)
+- [Preparing Your Application for Elastic Beanstalk](#preparing-your-application-for-elastic-beanstalk)
+- [Creating Elastic Beanstalk Deployments](#creating-elastic-beanstalk-deployments)
+- [Modifying Running Deployments](#modifying-running-deployments)
+
+
+
+
 ## Preparing this Rails Application for Elastic Beanstalk
 
 I've set up a linux server on Amazon EC2 that you can utilize for easy interaction with
