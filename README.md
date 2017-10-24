@@ -1,38 +1,49 @@
 # CS291 Elastic Beanstalk Demo Application
 
-This demo rails application provides a minimal rails 5 application
+This demo rails application provides a minimal Rails 5 application
 that can be launched to elastic beanstalk and configured with a
 postgres database.
 
+## Table of Contents
+
+- [Preparing this Rails Application for Elastic Beanstalk](#preparing-this-rails-application-for-elastic-beanstalk)
+- [Preparing Your Application for Elastic Beanstalk](#preparing-your-application-for-elastic-beanstalk)
+- [Creating Elastic Beanstalk Deployments](#creating-elastic-beanstalk-deployments)
+- [Modifying Running Deployments](#modifying-running-deployments)
+
+
+
+
 ## Preparing this Rails Application for Elastic Beanstalk
 
-I've set up a linux server that you can utilize for easy interaction with
-elasticbeanstalk. SSH into that server using the provided TEAMNAME.pem file
-via:
+I've set up a linux server on Amazon EC2 that you can utilize for easy interaction with
+elasticbeanstalk. (Alternatively, you could set up the CLI for elastic beanstalk on your local machine.)
 
-    ssh -i TEAMNAME.pem TEAMNAME@ec2.cs291.com
+1. SSH into that server using the provided TEAMNAME.pem file:
 
-1. Take note of your aws-access-id and aws-secret-key which can be found via:
+        ssh -i TEAMNAME.pem TEAMNAME@ec2.cs291.com
 
-    cat ~/TEAMNAME_key.txt
+1. On the EC2 instance you just ssh'd into, take note of your aws-access-id and aws-secret-key which can be found via:
+
+        cat ~/TEAMNAME_key.txt
 
     WARNING: Never commit this credentials into your repository, or put them
     anywhere else that they might be made public.
 
 1. From the home directory, clone this repository:
 
-    git clone https://github.com/scalableinternetservices/demo_rails514_beanstalk.git
+        git clone https://github.com/scalableinternetservices/demo_rails514_beanstalk.git
 
 1. Change into the project directory, and initialize elasticbeanstalk:
 
-    cd demo_rails514_beanstalk
-    eb init
+        cd demo_rails514_beanstalk
+        eb init
 
 1. Use the us-west-2 region (default).
 
-1. Provide your aws-access-id.
+1. Provide your aws-access-id. (*if prompted*)
 
-1. Provide your aws-secret-key.
+1. Provide your aws-secret-key. (*if prompted*)
 
 1. Create a new application (default) for your team if no such application
    already exists.
@@ -49,10 +60,12 @@ via:
 1. Indicate that you do want to set up SSH for your instances (default).
 
     * Choose the keypair that matches your team's name.
+    
+1. To test this configuration, skip ahead to section "[Creating Elastic Beanstalk Deployments](#creating-elastic-beanstalk-deployments)", wherein you will deploy this demo project to Elastic Beanstalk.
 
 ## Preparing Your Application for Elastic Beanstalk
 
-Use similar steps as above to initialize `eb` for your repository. Note that
+Use similar steps as above to initialize `eb` for your own project's repository. Note that
 `eb init` must be run from the top most directory of your repository.
 
 Next you need to make some changes to your application in order to configure it
