@@ -1,6 +1,6 @@
 # CS291 Elastic Beanstalk Demo Application
 
-This demo rails application provides a minimal rails 5 application
+This demo rails application provides a minimal Rails 5 application
 that can be launched to elastic beanstalk and configured with a
 postgres database.
 
@@ -17,10 +17,9 @@ postgres database.
 ## Preparing this Rails Application for Elastic Beanstalk
 
 I've set up a linux server on Amazon EC2 that you can utilize for easy interaction with
-elasticbeanstalk. 
+elasticbeanstalk. (Alternatively, you could set up the CLI for elastic beanstalk on your local machine.)
 
-1. SSH into that server using the provided TEAMNAME.pem file
-via:
+1. SSH into that server using the provided TEAMNAME.pem file:
 
         ssh -i TEAMNAME.pem TEAMNAME@ec2.cs291.com
 
@@ -62,7 +61,7 @@ via:
 
     * Choose the keypair that matches your team's name.
     
-1. To test this configuration, skip ahead to section "Creating Elastic Beanstalk Deployments", wherein you will deploy this demo project to Elastic Beanstalk.
+1. To test this configuration, skip ahead to section "[Creating Elastic Beanstalk Deployments](#creating-elastic-beanstalk-deployments)", wherein you will deploy this demo project to Elastic Beanstalk.
 
 ## Preparing Your Application for Elastic Beanstalk
 
