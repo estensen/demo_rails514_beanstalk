@@ -155,11 +155,12 @@ See the following for differences between the instance types:
 
 ### Scale your deployment
 
-To manage your deployments, use the web console "configuration" tab:
+To manage your deployments, log in to the AWS web console and go to the "configuration" tab:
 
-<https://bboe-ucsb.signin.aws.amazon.com/console>
+<https://console.aws.amazon.com/console/home>
 
-The username and password can be found in the file `TEAMNAME.txt` in your team's home folder of the EC2 instance at `ec2.cs291.com`.
+- **Account ID or alias**: bboe-ucsb
+- **IAM user name** and **Password**: See the file `TEAMNAME.txt` in your team's home folder of the EC2 instance at `ec2.cs291.com`.
 
 
 Vertically scale by changing the instance type
