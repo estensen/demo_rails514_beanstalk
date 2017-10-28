@@ -83,7 +83,7 @@ to work well with elasticbeanstalk.
        `Gemfile.lock`):
        https://github.com/scalableinternetservices/demo_rails514_beanstalk/commit/1afc197b3bee390d834dfdeedb2921bc3a32851e
 
-    2. Run `bundle install --without-production` to update your `Gemfile.lock`.
+    2. Run `bundle install --without production` to update your `Gemfile.lock`.
 
 
 1. Configure your production database settings to use postgresql and to fetch
